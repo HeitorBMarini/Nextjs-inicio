@@ -1,6 +1,10 @@
-import { useEffect, useState } from 'react';
-import Link from '../src/components/Link';
+//import { useEffect, useState } from 'react';
+//import Link from '../src/components/Link';
 import Head from 'next/head'
+import FAQScreen from '../src/screens/FaqScreen';
+
+export default FAQScreen; 
+
 //export async function getServerSideProps(){
 
 //console.log('Em modo DEV,  sempre roda! a cada acesso!')
@@ -28,33 +32,31 @@ console.log('Roda SOMENTE em build time')
     };
 }
 
-export default function FAQPage({faq}) {
-    console.log(faq)
+//export default function FAQPage({faq}) {
+//    console.log(faq)
     //const [faq, setFaq] = useState([]);
     //useEffect(() => {
    // []);
-    return (
-        <div>
-        <Head>
-        <title>FAQ - Alura cases campanha</title>
-        </Head>
-            <h1>Alura Cases - Páginas de Perguntas FAQ</h1>
-            <Link href="/">
-                Ir para a home
-            </Link>
+   // return (
+       // <div>
+//       </Head>
+         //  <h1>Alura Cases - Páginas de Perguntas FAQ</h1>
+          //  <Link href="/">
+              //  Ir para a home
+          //  </Link>
 
-            <ul>
-                {faq.map(({answer, question}) =>(
-                    <li key={question}>
-                        <article>
-                            <h2>{question}</h2>
-                            <p>{answer}</p>
-                        </article>
-                    </li>
+           // <ul>
+              //  {faq.map(({answer, question}) =>(
+                    //<li key={question}>
+                       // <article>
+                        //    <h2>{question}</h2>
+                           // <p>{answer}</p>
+                     //   </article>
+                //    </li>
                     
-                    ))}
+                  //  ))}
                 
-            </ul>
-        </div>
-    )
-}
+           // </ul>
+       // </div>
+   // )
+//}
