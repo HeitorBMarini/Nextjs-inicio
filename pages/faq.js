@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import Link from '../src/components/Link';
-
+import Head from 'next/head'
 //export async function getServerSideProps(){
 
 //console.log('Em modo DEV,  sempre roda! a cada acesso!')
@@ -35,6 +35,9 @@ export default function FAQPage({faq}) {
    // []);
     return (
         <div>
+        <Head>
+        <title>FAQ - Alura cases campanha</title>
+        </Head>
             <h1>Alura Cases - Páginas de Perguntas FAQ</h1>
             <Link href="/">
                 Ir para a home
